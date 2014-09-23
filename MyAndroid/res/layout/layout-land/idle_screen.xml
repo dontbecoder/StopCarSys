@@ -7,10 +7,46 @@
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
     tools:context="com.example.myandroid.MainActivity$PlaceholderFragment" >
- 
+
     <TextView
+        android:id="@+id/textView1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/hello_world" /> 
+        android:text="@string/hello_world" />
+
+    <Button
+        android:id="@+id/Check_network_id"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/textView1"
+        android:layout_below="@+id/textView1"
+        android:layout_marginTop="24dp"
+        android:text="@string/check_network_Bt_text" />
+
+    <TextView
+        android:id="@+id/network_status_id"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/Check_network_id"
+        android:layout_marginLeft="41dp"
+        android:layout_toRightOf="@+id/Check_network_id"
+        android:text="@string/network_status_text" />
+
+    <Button
+        android:id="@+id/Get_IP_id"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/Check_network_id"
+        android:layout_below="@+id/Check_network_id"
+        android:layout_marginTop="15dp"
+        android:text="@string/get_ip_bt_text" />
+
+    <TextView
+        android:id="@+id/Ip_id"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/Get_IP_id"
+        android:layout_marginLeft="150dp"
+        android:text="@string/Ip_text" />
 
 </RelativeLayout>
