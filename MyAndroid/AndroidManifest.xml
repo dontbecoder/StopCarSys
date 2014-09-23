@@ -14,6 +14,7 @@
         android:label="@string/app_name" >
         <activity
             android:name="com.example.myandroid.MainActivity"
+            android:screenOrientation="landscape"
             android:label="@string/app_name" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -21,7 +22,16 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name="com.example.myandroid.Idle_screen"></activity>
+    <receiver 
+        android:name="com.example.myandroid.BootUpReceiver"> 
+        <intent-filter> 
+        <action android:name="android.intent.action.BOOT_COMPLETED" /> 
+        <category android:name="android.intent.category.DEFAULT" />
+        </intent-filter> 
+    </receiver> 
+  
+    <activity android:name="com.example.myandroid.Idle_screen"></activity>
+    
     </application>
-
+  <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED"></uses-permission>
 </manifest>

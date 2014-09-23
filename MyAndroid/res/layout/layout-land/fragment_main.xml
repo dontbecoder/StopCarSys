@@ -1,0 +1,80 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.example.myandroid.MainActivity$PlaceholderFragment" >
+<!-- 
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/hello_world" /> -->
+
+    <TextView
+        android:id="@+id/login_account_id"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="39dp"
+        android:text="@string/login_account_text" />
+
+    <EditText
+        android:id="@+id/login_account_edit_id"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/login_account_id"
+        android:layout_below="@+id/login_account_id"
+        android:layout_marginTop="30dp"
+        android:ems="10"
+        android:maxLength="20"
+        android:maxLines="1"
+        android:inputType="text" >
+
+        <requestFocus />
+    </EditText>
+
+    <TextView
+        android:id="@+id/login_password_id"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/login_account_edit_id"
+        android:layout_below="@+id/login_account_edit_id"
+        android:layout_marginTop="60dp"
+        android:text="@string/login_password_text" />
+
+    <Button
+        android:id="@+id/login_Quit_Button_id"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/login_OK_Button_id"
+        android:layout_alignBottom="@+id/login_OK_Button_id"
+        android:layout_alignRight="@+id/login_account_edit_id"
+        android:text="@string/login_Quit_Button_text" />
+
+    <EditText
+        android:id="@+id/login_password_edit_id"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/login_password_id"
+        android:layout_below="@+id/login_password_id"
+        android:layout_marginTop="32dp"
+        android:ems="10"
+        android:maxLines="1"
+        android:maxLength="20"
+        android:inputType="textPassword" />
+
+    <Button
+        android:id="@+id/login_OK_Button_id"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/login_password_edit_id"
+        android:layout_below="@+id/login_password_edit_id"
+        android:layout_marginTop="32dp"
+        android:text="@string/login_OK_Button_text" />
+
+</RelativeLayout>
