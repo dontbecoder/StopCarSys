@@ -16,5 +16,7 @@
 	<string name="network_status_text">网络状态</string>
 	<string name="get_ip_bt_text">获取IP</string>
 	<string name="Ip_text">IP</string>
+	<string name="Create_DB_bt_text">创建DB</string>
+	<string name="Query_bt_text">查询DB</string>
 	
 </resources>

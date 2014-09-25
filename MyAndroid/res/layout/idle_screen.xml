@@ -49,4 +49,22 @@
         android:layout_marginLeft="150dp"
         android:text="@string/Ip_text" />
 
+    <Button
+        android:id="@+id/Create_DB_bt_id"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/Get_IP_id"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="18dp"
+        android:text="@string/Create_DB_bt_text" />
+
+    <Button
+        android:id="@+id/Query_bt_id"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/Create_DB_bt_id"
+        android:layout_alignBottom="@+id/Create_DB_bt_id"
+        android:layout_alignLeft="@+id/network_status_id"
+        android:text="@string/Query_bt_text" />
+
 </RelativeLayout>

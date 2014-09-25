@@ -32,7 +32,7 @@
   
     <activity android:name="com.example.myandroid.Idle_screen"
         	  android:screenOrientation="landscape"></activity>
-    
+    <activity android:name="com.example.myandroid.DB_test"></activity>
     </application>
   <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED"></uses-permission>
   <uses-permission android:name="android.permission.ACCESS_WIFI_STATE"></uses-permission>  
